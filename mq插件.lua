@@ -9,6 +9,8 @@
 local mq = {}
 
 -- 插件运行期状态（仅内存）
+local mq = {}
+
 local state = {
     initialized = false,
     status = "插件已加载",
@@ -24,6 +26,8 @@ local state = {
     deviceTable = {},
     dataTable = {},
     -- 中控任务配置（模拟下发）
+    deviceTable = {},
+    dataTable = {},
     taskConfig = {},
     code = "",
     userCode = "",
@@ -152,6 +156,7 @@ function mq.sendCloseMq()
 end
 
 -- 调试辅助：模拟“任务配置下发”并触发 e=66
+-- 下面是便于本地调试的辅助方法，不影响原接口
 function mq.mockSetTaskConfig(configTable)
     state.taskConfig = configTable or {}
     emitEvent(66, mq.getStateConfig())

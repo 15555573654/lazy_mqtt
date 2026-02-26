@@ -1,4 +1,8 @@
-mq = require("mq插件")
+local ok, mqModule = pcall(require, "mq插件")
+if not ok then
+	error("未找到可用的 mq插件.lua，请确认已放置明文插件文件")
+end
+mq = mqModule
 local code = "Y5RV23V9ZW"
 local user_code ="X9BWCGQN27"
 

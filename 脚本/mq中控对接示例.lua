@@ -1,7 +1,16 @@
-mq = require("mq插件")
+-- 示例脚本：演示如何加载并使用明文 mq 插件
+-- 直接加载项目根目录的明文插件，避免依赖额外兼容层文件
+local pluginPath = "../mq插件.lua"
+local f = io.open(pluginPath, "r")
+if not f then
+	error("未找到可用的 ../mq插件.lua，请确认已放置明文插件文件")
+end
+f:close()
+mq = dofile(pluginPath)
 local code = "Y5RV23V9ZW"
 local user_code ="X9BWCGQN27"
 
+-- 初始化插件（通常传入卡密与用户码）
 mq.init(code,user_code)
 
 function onPluginEvent(e , arg)

@@ -1,3 +1,5 @@
+-- 示例脚本：演示如何加载并使用明文 mq 插件
+-- 安全加载插件：避免 require 失败导致无提示退出
 local ok, mqModule = pcall(require, "mq插件")
 if not ok then
 	error("未找到可用的 mq插件.lua，请确认已放置明文插件文件")
@@ -6,6 +8,7 @@ mq = mqModule
 local code = "Y5RV23V9ZW"
 local user_code ="X9BWCGQN27"
 
+-- 初始化插件（通常传入卡密与用户码）
 mq.init(code,user_code)
 
 function onPluginEvent(e , arg)

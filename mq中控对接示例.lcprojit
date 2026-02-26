@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<lcprojit listen_port="0" pkgname="com.mq.test" vercode="1" lcprojversion="150" opt_disableshowfloatwnd_checked="0" use_confusion="0" cpu_x86="1" show_setting_menu="1" use_oldfloatwnd="0" vername="0.0.1" show_exit_menu="1" opt_floatwnddock="1" use_oldsnapmode="0" opt_runinrootmode_checked="1" opt_forceruninrootmode_checked="144" opt_openanrunscript_checked="0" opt_bootautorun_checked="0" use_pluginmainui="0" apiport="0" opt_openorclosebyvol_checked="1" cpu_arm64="1" use_pluginservice="0" use_gohunxiao="1" engine_type="3" opt_recorandsavelog_checked="1" vir_hei="0" opt_remove_imgui="0" show_log_menu="1" crashautorestart="0" opt_delnatural_checked="0" appname="mq中控对接示例" is_acc_mode="0" use_simplelogwnd="0" opt_logofillfloatwnd_checked="0" show_custom_menu="1" opt_showscriptmainui_checked="1" opt_notshowmainui_checked="0" projname="mq中控对接示例" custom_menu_name="我的菜单" cpu_arm="1" cpu_x86_64="1" opt_useoldnodeservice_checked="0" plugin_path="" vir_wid="0" opt_delonnx_checked="0" icon="" opt_delncnn_checked="0" show_pause_menu="1">
+ <lua entry="mq中控对接示例.lua"/>
+ <ui entry="mq中控对接示例.ui"/>
+ <rc entry="mq中控对接示例.rc"/>
+ <luaej/>
+</lcprojit>
